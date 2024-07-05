@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@mipmap/backgraunt_app">
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="271dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="567dp"
+        android:gravity="center"
+        android:text="Nombre de usuario"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="433dp"
+        android:layout_marginEnd="91dp"
+        android:text="Cerrar sesión" />
+
+    <Button
+        android:id="@+id/login00"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="108dp"
+        android:text="Iniciar Sesion" />
+
+</RelativeLayout>

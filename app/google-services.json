@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1029272858708",
+    "firebase_url": "https://learn-hiragana-740d1-default-rtdb.firebaseio.com",
+    "project_id": "learn-hiragana-740d1",
+    "storage_bucket": "learn-hiragana-740d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029272858708:android:567fd051519cb30410fdc1",
+        "android_client_info": {
+          "package_name": "com.example.learnhiragana"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDm73rVBSH4SOBndC1-ssTyhb1RXjZioA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

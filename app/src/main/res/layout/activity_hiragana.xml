@@ -1,0 +1,2509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hiragana"
+    android:background="@color/white">
+
+
+    <View
+
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginEnd="-9dp"
+        android:background="@drawable/bg_view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="90dp"
+        android:text="HIRAGANA"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="45dp"
+        android:text="DICCIONARIO"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="678dp"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="676dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_a"
+                        android:layout_width="80dp"
+                        android:layout_height="74dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_a" />
+
+                    <TextView
+                        android:id="@+id/h_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_a"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_a1"
+                        android:layout_width="63dp"
+                        android:layout_height="73dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_a1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_i" />
+
+                    <TextView
+                        android:id="@+id/h_i"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_i"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_i1"
+                        android:layout_width="77dp"
+                        android:layout_height="81dp"
+                        android:layout_marginEnd="16dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@mipmap/img_hiragana_i1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_u"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_u" />
+
+                    <TextView
+                        android:id="@+id/h_u"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="u"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_u"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_u1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_u1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_e" />
+
+                    <TextView
+                        android:id="@+id/h_e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="e"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_e"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_e1"
+                        android:layout_width="89dp"
+                        android:layout_height="81dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_e1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_o"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_o" />
+
+                    <TextView
+                        android:id="@+id/h_o"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="o"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_o"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_o1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_o1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ka" />
+
+                    <TextView
+                        android:id="@+id/h_ka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ka"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ka"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ka1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ka1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ki" />
+
+                    <TextView
+                        android:id="@+id/h_ki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ki"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ki"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ki1"
+                        android:layout_width="88dp"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ki1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ku" />
+
+                    <TextView
+                        android:id="@+id/h_ku"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ku"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ku"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ku1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ku1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ke" />
+
+                    <TextView
+                        android:id="@+id/h_ke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ke"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ke"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ke1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ke1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ko"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ko" />
+
+                    <TextView
+                        android:id="@+id/h_ko"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ko"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ko"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ko1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ko1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_sa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_i" />
+
+                    <TextView
+                        android:id="@+id/h_sa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sa"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_sa"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_sa1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_sa1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_shi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_shi" />
+
+                    <TextView
+                        android:id="@+id/h_shi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="shi"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_shi"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_shi1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_shi1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_su"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_su" />
+
+                    <TextView
+                        android:id="@+id/h_su"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="su"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_su"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_su1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_su1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_se"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_se" />
+
+                    <TextView
+                        android:id="@+id/h_se"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="se"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_se"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_se1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_se1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_so"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_so" />
+
+                    <TextView
+                        android:id="@+id/h_so"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="so"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_so"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_so1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_so1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ta" />
+
+                    <TextView
+                        android:id="@+id/h_ta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ta"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ta"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ta1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ta1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_chi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_chi" />
+
+                    <TextView
+                        android:id="@+id/h_chi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="chi"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_chi"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_chi1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_chi1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_tsu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_tsu" />
+
+                    <TextView
+                        android:id="@+id/h_tsu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="tsu"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_tsu"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_tsu1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_tsu1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_te"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_te" />
+
+                    <TextView
+                        android:id="@+id/h_te"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="te"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_te"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_te1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_te1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_to" />
+
+                    <TextView
+                        android:id="@+id/h_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="to"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_to"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_to1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_to1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_na"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_na" />
+
+                    <TextView
+                        android:id="@+id/h_na"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="na"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_na"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_na1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_na1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ni" />
+
+                    <TextView
+                        android:id="@+id/h_ni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ni"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ni"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ni1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ni1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_nu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_nu" />
+
+                    <TextView
+                        android:id="@+id/h_nu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nu"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_nu"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_nu1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_nu1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ne" />
+
+                    <TextView
+                        android:id="@+id/h_ne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ne"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ne"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ne1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ne1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_no" />
+
+                    <TextView
+                        android:id="@+id/h_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="no"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_no"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_no1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_no1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ha" />
+
+                    <TextView
+                        android:id="@+id/h_ha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ha"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ha"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ha1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ha1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_hi" />
+
+                    <TextView
+                        android:id="@+id/h_hi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hi"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_hi"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_hi1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_hi1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_fu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_fu" />
+
+                    <TextView
+                        android:id="@+id/h_fu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="fu"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_fu"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_fu1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_fu1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_he"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_he" />
+
+                    <TextView
+                        android:id="@+id/h_he"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="he"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_he"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_he1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_he1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ho" />
+
+                    <TextView
+                        android:id="@+id/h_ho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ho"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ho"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ho1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ho1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ma" />
+
+                    <TextView
+                        android:id="@+id/h_ma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ma"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ma"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ma1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ma1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_mi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_mi" />
+
+                    <TextView
+                        android:id="@+id/h_mi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mi"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_mi"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_mi1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_mi1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_mu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_mu" />
+
+                    <TextView
+                        android:id="@+id/h_mu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mu"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_mu"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_mu1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_mu1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_me" />
+
+                    <TextView
+                        android:id="@+id/h_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="me"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_me"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_me1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_me1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_mo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_mo" />
+
+                    <TextView
+                        android:id="@+id/h_mo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mo"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_mo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_mo1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_mo1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ya" />
+
+                    <TextView
+                        android:id="@+id/h_ya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ya"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ya"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ya1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ya1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_yu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_yu" />
+
+                    <TextView
+                        android:id="@+id/h_yu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yu"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_yu"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_yu1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_yu1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_yo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_yo" />
+
+                    <TextView
+                        android:id="@+id/h_yo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yo"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_yo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_yo1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_yo1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ra" />
+
+                    <TextView
+                        android:id="@+id/h_ra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ra"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ra"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ra1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ra1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ri" />
+
+                    <TextView
+                        android:id="@+id/h_ri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ri"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ri"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ri1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ri1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ru" />
+
+                    <TextView
+                        android:id="@+id/h_ru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ru"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ru"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ru1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ru1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_re"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_re" />
+
+                    <TextView
+                        android:id="@+id/h_re"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="re"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_re"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_re1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_re1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_ro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_ro" />
+
+                    <TextView
+                        android:id="@+id/h_ro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ro"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_ro"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_ro1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_ro1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_wa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_wa" />
+
+                    <TextView
+                        android:id="@+id/h_wa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wa"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_wa"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_wa1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_wa1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_wo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_wo" />
+
+                    <TextView
+                        android:id="@+id/h_wo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="wo - o"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_wo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_wo1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_wo1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="379dp"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardMaxElevation="5dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/img_hiragana_n" />
+
+                    <TextView
+                        android:id="@+id/h_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="n"
+                        android:textSize="35dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.304"
+                        app:layout_constraintStart_toEndOf="@id/img_n"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_n1"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.407"
+                        app:srcCompat="@mipmap/img_hiragana_n1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
